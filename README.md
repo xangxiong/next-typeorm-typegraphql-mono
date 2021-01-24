@@ -1,0 +1,1 @@
+# next-typeorm-typegraphql-mono
