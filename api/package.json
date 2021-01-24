@@ -1,0 +1,40 @@
+{
+  "name": "@mono/api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node -r tsconfig-paths/register ./node_modules/.bin/next dev",
+    "start": "ts-node -r tsconfig-paths/register ./node_modules/.bin/next start",
+    "build": "ts-node -r tsconfig-paths/register ./node_modules/.bin/next build",
+    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/.bin/typeorm"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "apollo-server-micro": "^2.19.2",
+    "inversify": "^5.0.5",
+    "next": "10.0.5",
+    "next-compose-plugins": "^2.2.1",
+    "next-connect": "^0.9.1",
+    "next-optimized-images": "^2.6.2",
+    "next-transpile-modules": "^6.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-inversify": "^2.0.1",
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.0.1",
+    "tsconfig-paths": "^3.9.0",
+    "type-graphql": "^1.1.1",
+    "typeorm": "^0.2.30"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-decorators": "^7.12.12",
+    "@types/node": "^14.14.22",
+    "@types/react": "^17.0.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-transform-typescript-metadata": "^0.3.1",
+    "typescript": "^4.1.3"
+  }
+}
