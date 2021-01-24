@@ -1,31 +1,12 @@
 import 'reflect-metadata';
-import { BindingScopeEnum, ContainerModule, interfaces } from 'inversify';
-import { ChangeNotification } from 'react-inversify';
-import { Container } from 'react-inversify';
+import { ContainerModule } from 'inversify';
+import { container, changeNotification, loadServices } from '@one/common/src/system/di';
 import { services } from '../configs';
 
-export function loadServices(services: any): interfaces.ContainerModuleCallBack {
-    return (bind: interfaces.Bind, unbind: interfaces.Unbind): void => {
-        for (let name in services) {
-            let loader = services[name];
+export const apis = new ContainerModule(loadServices(services));
+container.load(apis);
 
-            bind<interfaces.Factory<any>>(`Factory<${name}>`)
-            .toFactory<any>((context: interfaces.Context): any => {
-                let module = loader();
-                if (module[name] && module[name].factory instanceof Function) {
-                    return module[name].factory(context);
-                }
-
-                return null;
-            });
-        }
-    };
-}
-
-export const commons = new ContainerModule(loadServices(services));
-export const container = new Container({
-    defaultScope: BindingScopeEnum.Request
-});
-container.load(commons);
-
-export const changeNotification = new ChangeNotification();
+export {
+    container,
+    changeNotification
+};
