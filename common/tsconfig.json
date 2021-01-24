@@ -2,7 +2,6 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "rootDir": ".",
     "lib": [
       "dom",
       "dom.iterable",
@@ -15,18 +14,15 @@
       "../node_modules/@types"
     ],
     "paths": {
-      "@mono/api/*": ["./*"]
+      "@mono/common/*": ["./*"]
     }
   },
   "include": [
-    "next-env.d.ts",
     "src/**/*.ts",
     "src/**/*.tsx"
   ],
   "exclude": [
     "dist",
-    ".next",
-    "next.config.js",
     "node_modules"
   ]
 }

@@ -1,5 +1,6 @@
 import { Entity, Column, BaseEntity, PrimaryGeneratedColumn, BeforeUpdate, BeforeInsert } from 'typeorm';
 import { Field, ObjectType } from 'type-graphql';
+import { EmptyClass } from '@one/common/src/mixins';
 
 @Entity({name: 'users'})
 @ObjectType('User')

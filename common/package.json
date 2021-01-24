@@ -1,0 +1,39 @@
+{
+  "name": "@one/common",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {},
+  "dependencies": {
+    "cookie-session": "^1.4.0",
+    "csrf-token": "^1.1.0",
+    "inversify": "^5.0.5",
+    "micro-redirect": "^1.0.2",
+    "moment": "^2.29.1",
+    "next": "^10.0.5",
+    "react": "^17.0.1",
+    "react-inversify": "^2.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/helper-create-regexp-features-plugin": "^7.12.7",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-decorators": "^7.12.1",
+    "@babel/plugin-syntax-jsx": "^7.12.1",
+    "@babel/plugin-syntax-typescript": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-typescript": "^7.12.7",
+    "@types/es6-shim": "^0.31.41",
+    "@types/graphql": "^14.5.0",
+    "@types/jest": "^26.0.19",
+    "@types/node": "^14.14.9",
+    "@types/passport": "^1.0.5",
+    "@types/react": "^16.14.2",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-transform-typescript-metadata": "^0.3.1",
+    "typescript": "^4.1.2"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}

@@ -2,10 +2,12 @@
     "private": true,
     "workspaces": {
         "packages": [
-            "api"
+            "api",
+            "common"
         ],
         "nohoist": [
-            "@mono/**"
+            "@one/**"
         ]
-    }
+    },
+    "dependencies": {}
 }
