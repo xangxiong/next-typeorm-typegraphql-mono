@@ -19,6 +19,8 @@
     "next-compose-plugins": "^2.2.1",
     "next-connect": "^0.9.1",
     "next-optimized-images": "^2.6.2",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-inversify": "^2.0.1",
